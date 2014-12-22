@@ -3,3 +3,6 @@ Knowledge-Base
 http://learn.hackerearth.com/questions/?page=1&company=Google&view=popular
 
 http://www.brw.com.au/p/sections/the_business_end/questions_you_should_work_able_for_3yy6fCFutAwAfQe1AL63gP
+
+Code Review
+http://www.codeproject.com/Articles/524235/Codeplusreviewplusguidelines
