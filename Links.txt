@@ -6,3 +6,6 @@ http://www.brw.com.au/p/sections/the_business_end/questions_you_should_work_able
 
 Code Review
 http://www.codeproject.com/Articles/524235/Codeplusreviewplusguidelines
+
+
+http://www.bogotobogo.com/cplusplus/libraries.php
