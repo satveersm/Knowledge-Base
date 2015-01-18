@@ -30,5 +30,7 @@ tail n file_name
 dd
 13)What command is used to summarize the disk usage?
 du
+14)How to access Linux systems remotely from Windows machine? 
+SSH Secure Shell Client or putty
 
 
