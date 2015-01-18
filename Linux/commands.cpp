@@ -63,5 +63,112 @@ you could use the more/less command for paging
 through text a screenful at a time
 more test.txt 
 less test.txt
+26) TAR(Tape archive or tapball)
+Tar bundles files and subdir together and create an archive
+tar -cvf tar_file_name.tar  * c mean creat a tar 
+go to that dir and execute this
+
+27) Extract using x flag
+tar -xvf xyz.tar
+28) Creating a compressed tar file
+use z option along c
+tar -cvzf my.tar.gz *
+we can extract using smae command
+tar -xvf my.tar.gz
+
+Note: the c, v, and f flags mean create a new archive, be verbose 
+so that the files being archived are listed, and write the archive to 
+a file.
+
+c- create a archive
+v -be verbose so all files which archived are listed
+f - write archive to a file
+
+29)By default, the output is displayed on the screen 
+“ > ” symbol can be used to redirect the output to a file or a 
+utility (e.g., ls). Example: 
+ls -ltr > myContent 
+30)
+• The “ | “ symbol is used to connect the output of one process 
+to the input of another process 
+ ls -l | wc -l 
+wc counts the number of lines 
+31)
+“ < ” symbol is used for input redirection 
+mail -s "SSC 222/292" rauta@tacc.utexas.edu < test.txt
+32)
+“ >> ” symbol is used for appending output to a file 
+cat test3.txt >> test.txt 
+33)
+“ ; ” is used to execute multiple commands in one step
+34)
+You can add content to a file as follows 
+cat > test.txt //add >
+This is what I am entering from the console 
+CTRL-D
+cat test.txt //display
+This is what I am entering from the console 
+35)
+• You can append content to a file as follows
+cat >> test.txt 
+Appending more lines 
+CTRL-D 
+cat test.txt
+36)
+To check the login name use the command whoami or echo 
+$USER 
+37)
+To check the groups you are a member of use the command 
+groups 
+38)
+To check your user id, or group id use the command id 
+39)
+Users typically perform the following operations on files: 
+Read files (using more, cat, etc.) 
+Write files (using >, vi, etc.)
+Execute commands in a file (executables, etc.) 
+Each file has three permissions – read, write and execute 
+(rwx) 
+ 
+• Person creating the file is the owner or user and can modify 
+permissions as desired 
+– Owner can modify permissions on files to grant or revoke 
+access to other users 
+To check the file permissions use the -l flag with the 
+ls command 
+
+login4$ ls -l 
+total 24 
+drwx------ 2 rauta G-25072 4096 Jan 17 14:07 junk 
+drwx------ 2 rauta G-25072 4096 Jan 17 14:15 junk2 
+-rw------- 1 rauta G-25072 65 Jan 17 13:59 test.txt 
+
+40)
+chmod command is used to change permissions on a file
+To add specific permission use chmod + 
+– To add write permission to all users use: 
+ chmod a+w filename 
+– To add read permission to only the users in your group use: 
+ chmod g+r filename 
+– To make a file executable and runnable by any user 
+ chmod a+x myfile 
+ 
+ To remove specific permission use chmod –
+ Add and remove permissions can be combined in a single step 
+– chmod u+x,g+r,o-rwx filename 
+
+Instead of using alphabets u, g, o for user, group, and others we 
+can use numbers to specify file permissions 
+rwx = 111 = 7 
+rw- = 110 = 6 
+r-x = 101 = 5 
+r-- = 100 = 4 
+-wx = 011 = 3 
+-w- = 010 = 2 
+--x = 001 = 1 
+--- = 000 = 0 
+-=z00p7y6gtv
+
+
 
 
