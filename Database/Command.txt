@@ -58,3 +58,15 @@ SQL> SELECT resource_name,resource_type,limit FROM dba_profiles WHERE profile='D
 SQL> ALTER USER BI_BIPLATFORM PROFILE appusr_default; 
 
 ALTER USER BI_BIPLATFORM ACCOUNT UNLOCK; 
+
+
+Login to database in linux
+==========================
+
+export ORACLE_HOME=/product/11.2.0/db_home1
+export ORACLE_SID=orcl.us.oracle.com
+
+cd /product/11.2.0/db_home1/bin
+./sqlplus
+
+enter user id and password
