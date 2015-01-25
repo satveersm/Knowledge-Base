@@ -22,6 +22,7 @@ sort -r
 e
 9)What can he used to set up a firewall on a Linux system?
 ipchains
+iptables
 10)Which of the following command lists the last 10 lines of a file?
 tail n file_name
 11)What command is used with vi editor to delete three words?
