@@ -168,7 +168,63 @@ r-- = 100 = 4
 -w- = 010 = 2 
 --x = 001 = 1 
 --- = 000 = 0 
--=z00p7y6gtv
+
+41) sed command
+>cat file.txt
+unix is great os. unix is opensource. unix is free os.
+learn operating system.
+unixlinux which one you choose.
+
+SED COMMAND EXAMPLES
+1)Replacing or substituting string
+Sed command is mostly used to replace the text in a file. The below simple sed
+command replaces the word "unix" with "linux" in the file.
+>sed 's/unix/linux/' file.txt
+linux is great os. unix is opensource. unix is free os.
+learn operating system.
+linuxlinux which one you choose.
+
+Here the "s" specifies the substitution operation. The "/" are delimiters.
+The "unix" is the search pattern and the "linux" is the replacement string.
+
+By default, the sed command replaces the first occurrence of the pattern in
+each line and it won't replace the second, third...occurrence in the line.
+
+2)Replacing the nth occurrence of a pattern in a line.
+Use the /1, /2 etc flags to replace the first, second occurrence of a pattern 
+in a line. The below command replaces the second occurrence of the word 
+"unix" with "linux" in a line.
+
+>sed 's/unix/linux/2' file.txt
+unix is great os. linux is opensource. unix is free os.
+learn operating system.
+unixlinux which one you choose.
+
+3)Replacing all the occurrence of the pattern in a line.
+The substitute flag /g (global replacement) specifies the sed command to replace
+all the occurrences of the string in the line.
+
+>sed 's/unix/linux/g' file.txt
+linux is great os. linux is opensource. linux is free os.
+learn operating system.
+linuxlinux which one you choose.
+
+Running multiple sed commands.
+You can run multiple sed commands by piping the output of one sed command 
+as input to another sed command.
+>sed 's/unix/linux/' file.txt| sed 's/os/system/'
+linux is great system. unix is opensource. unix is free os.
+learn operating system.
+linuxlinux which one you chosysteme.
+
+
+Sed provides -e option to run multiple sed commands in a single sed command. 
+The above output can be achieved in a single sed command as shown below.
+
+>sed -e 's/unix/linux/' -e 's/os/system/' file.txt
+linux is great system. unix is opensource. unix is free os.
+learn operating system.
+linuxlinux which one you chosysteme.
 
 
 
