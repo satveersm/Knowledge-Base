@@ -69,7 +69,30 @@ export ORACLE_SID=orcl
 cd /product/11.2.0/db_home1/bin
 ./sqlplus
 
-enter user id and password
+SQL*Plus: Release 10.2.0.1.0 - Production on Wed Apr 13 15:06:03 2011
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Enter user-name: scott
+Enter password: 
+ERROR:
+ORA-01034: ORACLE not available
+ORA-27101: shared memory realm does not exist
+Linux Error: 2: No such file or directory
+
+
+Enter user-name: 
+
+If shared memory related error coming it mean db is down
+
+do this
+
+cd $ORACLE_HOME
+cd bin
+$ lsnrctl start
+$ sqlplus / as sysdba
+SQL> startup
+
 
 ON/OFF iptables
 
