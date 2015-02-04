@@ -227,5 +227,11 @@ learn operating system.
 linuxlinux which one you chosysteme.
 
 
+42) Give write permision to a folder for all users
 
+sudo su
+
+chmod 7777  /scratch/
+
+all user can write read execute
 
