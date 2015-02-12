@@ -30,3 +30,21 @@ to increase their profits. One thing they could have done – odd as it sounds �
 beer display closer to the diapers. Or, they could have simply made sure not to give any
 discounts on beer on Thursdays and Saturdays. This is data mining in action – extracting meaningful
 data from a huge data set.
+
+
+
+A great example of data warehousing that everyone can relate to is what Facebook does. 
+Facebook basically gathers all of your data – your friends, your likes, who you stalk, 
+etc – and then stores that data into one central repository. Even though Facebook most 
+likely stores your friends, your likes, etc, in separate databases, they do want to take
+the most relevant and important information and put it into one central aggregated database.
+Why would they want to do this? For many reasons – they want to make sure that you see the 
+most relevant ads that you’re most likely to click on, they want to make sure that the friends
+that they suggest are the most relevant to you, etc – keep in mind that this is the data mining 
+phase, in which meaningful data and patterns are extracted from the aggregated data. But,
+underlying all these motives is the main motive: to make more money – after all, Facebook is a business.
+
+We can say that data warehousing is basically a process in which data from multiple sources/databases is 
+combined into one comprehensive and easily accessible database. Then this data is readily available to any
+business professionals, managers, etc. who need to use the data to create forecasts – and who basically use
+the data for data mining.
