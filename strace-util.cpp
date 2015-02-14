@@ -1,3 +1,6 @@
+
+strace -fF -tt -all -o working.txt -p pid
+
 strace is used to invoke an application, and reports every system call invoked
 by the process and each signal received by the process until the process exits.
 This information is displayed in real time on stderr.  Obviously, that means it 
