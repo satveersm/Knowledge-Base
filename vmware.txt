@@ -1,0 +1,10 @@
+Review request
+==============
+open cmd
+fire c:\
+fire your smechu-vum-xyz path
+update your P4CONFIG file if its not updated
+set P4CONFIG=.p4config
+now u fire \\build-apps\apps\bin\post-review  cln no
+
+update the url with reviewer email and any other supporting file u want to attach
